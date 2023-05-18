@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<!-- このファイルはHTMLですという宣言 -->
+<html>
+<head>
+    <!-- ここから裏の設定ですよという宣言 -->
+    <meta charset="utf-8"><!-- 文字化け防止の記述 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ややこしいので無視してOK -->
+    <title> もちの譜面配布</title><!-- ページのタイトルを入れます -->
+    <style>
+        .flex {
+            display: flex; /*横並び*/
+
+        }
+
+            .flex .image {
+                width: 200px; /*画像サイズ指定*/
+                margin: 0;
+                padding: 0;
+
+            }
+
+
+            .flex .Difficult img {
+                width: 450px;
+                margin: -20px 0 0 -50px;
+                padding: 0;
+            }
+
+
+                .flex .image img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .flex .right {
+                margin: 0 0 0 20px;
+                padding: 0;
+            }
+
+            .flex .title {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .flex .text {
+                margin: 10px 0 0;
+                padding: 0;
+            }
+
+        body {
+            margin: 20px;
+            padding: 0;
+        }
+        .class1 {
+            color: blue;
+            font-weight: bold;
+        }
+        .top-left {
+            position: absolute;
+            top: 130px;
+            left: 580px;
+            font-size: 3rem;
+            color: #fff;
+            text-stroke: 5px #000;
+            -webkit-text-stroke: 3px #000;
+            font-weight: bold;
+        }
+    </style>
+</head><!-- ここまでがうらの設定ですよという宣言 -->
+<p>ジャケット画像をクリックでダウンロード</p>
+<div class="flex" >
+   <a href="ホーリーサンバランド/ホーリーサンバランド.zip" download="ホーリーサンバランド.zip"> <figure class="image"><img src="ホーリーサンバランド/Holy_sambaland.png" alt=""></figure></a>
+   <div class="right">
+       <p class="title">ホーリーサンバランド</p>
+       <p class="text">SAMBA MASTER 佐藤</p>
+       <p class="text">BPM　<span class="class1">150</span></p>
+       <figure class="Difficult"><img src="難易度.png" alt=""></figure>
+       <p class="top-left">★10</p>
+   </div>
+</div>
+
+    </body ><!-- ここまでがページに表示される内容ですよという宣言 -->
+</html><!-- ここまでがHTMLですという終わりの宣言 -->
