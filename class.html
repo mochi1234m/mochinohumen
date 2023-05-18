@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!-- このファイルはHTMLですという宣言 -->
+<html>
+<head>
+    <!-- ここから裏の設定ですよという宣言 -->
+    <meta charset="utf-8"><!-- 文字化け防止の記述 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ややこしいので無視してOK -->
+    <title> もちの譜面配布</title><!-- ページのタイトルを入れます -->
+    <style>
+        .flex {
+            display: flex; /*横並び*/
+        }
+
+            .flex .image {
+                width: 200px; /*画像サイズ指定*/
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .flex .Difficult img {
+                width: 450px;
+                margin: -20px 0 0 -50px;
+                padding: 0;
+            }
+
+
+            .flex .image img {
+                width: 100%;
+                height: auto;
+            }
+
+            .flex .right {
+                margin: 0 0 0 20px;
+                padding: 0;
+            }
+
+            .flex .title {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .flex .text {
+                margin: 10px 0 0;
+                padding: 0;
+            }
+
+        body {
+            margin: 20px;
+            padding: 0;
+        }
+
+        .class1 {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 130px;
+            left: 580px;
+            font-size: 3rem;
+            color: #fff;
+            text-stroke: 5px #000;
+            -webkit-text-stroke: 3px #000;
+            font-weight: bold;
+        }
+
+        .area {
+            width: 500px;
+            margin: auto;
+            flex-wrap: wrap;
+            display: flex;
+            font-weight: bold;
+        }
+
+        .tab_class {
+            width: calc(100%/5);
+            height: 50px;
+            background-color: darkgrey;
+            line-height: 50px;
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            float: left;
+            order: -1;
+
+        }
+
+        input[name="tab_name"] {
+            display: none;
+        }
+
+        input:checked + .tab_class {
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+
+        .content_class {
+            display: none;
+            width: 100%;
+
+        }
+
+        input:checked + .tab_class + .content_class {
+            display: block;
+        }
+    </style>
+</head><!-- ここまでがうらの設定ですよという宣言 -->
+<p>ジャケット画像をクリックでダウンロード</p>
+<a href="https://forms.gle/jGn37Wj4m4SEzVGS6">合格報告、ネームプレート申請はここへ</a>
+<div class="area">
+    <input type="radio" name="tab_name" id="tab1" checked>
+    <label class="tab_class" for="tab1">枠</label>
+    <div class="content_class">
+        <div class="flex">
+            <a href="雅/Rush-HourSET.zip" download="Rush-HourSET.zip"> <figure class="image"><img src="粋/J219.webp" alt=""></figure></a>
+            <div class="right">
+                <p class="title">First step</p>
+                <p class="text">
+                    1st.J219
+                </p>
+                <p class="text">
+                    2nd.なだめスかし Negotiation
+                </p>
+                <p class="text">
+                    3rd.昵懇レファレンス
+                </p>
+                <p class="text">
+                    合格条件:コンボ数450以上、不可の数20未満、魂ゲージ90%以上で完走
+                </p>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab2">
+    <label class="tab_class" for="tab2">雅</label>
+    <div class="content_class">
+        <div class="flex">
+            <a href="雅/Rush-HourSET.zip" download="Rush-HourSET.zip"> <figure class="image"><img src="雅//Holy_sambaland.png" alt=""></figure></a>
+            <div class="right">
+                <p class="title">Rush-HourSET(玄人相当)</p>
+                <p class="text">
+                    1st.ホーリーサンバランド
+                </p>
+                <p class="text">
+                    2nd.中学2年生のアンドロイド
+                </p>
+                <p class="text">
+                    3rd.Rush-Hour
+                </p>
+                <p class="text">
+                合格条件:可を50未満、不可を6未満に抑え魂ゲージ100%で完走
+                </p>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab3">
+    <label class="tab_class" for="tab3">極</label>
+    <div class="content_class">
+        <p>近日公開</p>
+    </div>
+    <input type="radio" name="tab_name" id="tab4">
+    <label class="tab_class" for="tab4">∞</label>
+    <div class="content_class">
+        <p>近日公開</p>
+    </div>
+    <input type="radio" name="tab_name" id="tab5">
+    <label class="tab_class" for="tab5">EX</label>
+    <div class="content_class">
+        <p>近日公開</p>
+    </div>
+</div>
+    </body ><!-- ここまでがページに表示される内容ですよという宣言 -->
+</html><!-- ここまでがHTMLですという終わりの宣言 -->
